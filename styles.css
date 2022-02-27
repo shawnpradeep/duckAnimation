@@ -1,0 +1,149 @@
+:root {
+    --pink: rgba(255, 192, 203, 0.698);
+    --yellow: rgba(228, 228, 63, 0.788);
+    --red: rgba(250, 55, 55, 0.822);
+    --purple: rgba(179, 46, 179, 0.753);
+    --blue: rgba(0, 0, 255, 0.664);
+    --gray: rgba(128, 128, 128, 0.609);
+    --orange:rgba(255, 166, 0, 0.65);
+    --green: rgba(0, 128, 0, 0.705);
+    --white:rgba(226, 223, 223, 0.794);
+    --black: rgba(0, 0, 0, 0.801);
+    
+ 
+}
+
+
+
+body {
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background: var(--yellow);
+    animation: changeBackground;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-direction: alternate;
+
+
+}
+@keyframes changeBackground{
+    0%{
+        background: var(--pink);
+    }
+    10%{
+        background: var(--yellow);
+
+    }
+    20%{
+        background: var(--red);
+ 
+    }
+    30%{
+        background: var(--purple);
+
+    }
+    40%{
+        background: var(--blue);
+
+    }
+    50%{
+        background: var(--gray);
+
+    }
+    60%{
+        background: var(--orange);
+
+    }
+    70%{
+        background: var(--green);
+
+    }
+    80%{
+        background: var(--yellow);
+
+    }
+    90%{
+        background: var(--white);
+
+    }
+    100%{
+        background: var(--black);
+
+    }
+
+}
+
+
+
+@-webkit-keyframes changeBackground{
+    0%{
+        background: var(--pink);
+    }
+    10%{
+        background: var(--yellow);
+
+    }
+    20%{
+        background: var(--red);
+ 
+    }
+    30%{
+        background: var(--purple);
+
+    }
+    40%{
+        background: var(--blue);
+
+    }
+    50%{
+        background: var(--gray);
+
+    }
+    60%{
+        background: var(--orange);
+
+    }
+    70%{
+        background: var(--green);
+
+    }
+    80%{
+        background: var(--yellow);
+
+    }
+    90%{
+        background: var(--white);
+
+    }
+    100%{
+        background: var(--black);
+
+    }
+
+}
+
+
+.animation {
+    width:50%;
+    height:400px;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+
+
+}
+
+
+.image {
+    height:300px;
+    padding:10px;
+    width:40%;
+    background-repeat: no-repeat;
+}
+
+
